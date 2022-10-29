@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp verify</title>
+</head>
+<body>
+    <h1 style="text-align: center;">verify otp</h1> 
+    <form action="/api/user/signup/verify " method="POST">
+        <input type="text" name="number" placeholder="number">
+        <input type="text" name="otp" placeholder="otp">
+        <button  id="example-btn">verify OTP</button>
+    </form>
+    <script>
+        const exampleBtn = document.getElementById('example-btn');
+    
+        exampleBtn.addEventListener('click', () => {
+      window.open('./loggedIn.html');
+    });
+        </script>
+    
+</body>
+</html>
